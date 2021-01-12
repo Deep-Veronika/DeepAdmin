@@ -1,24 +1,33 @@
-# README
+# DeepAdmin
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Общее описание
+Административная панель для ваших проектов на Ruby On Rails. Наш проект преследует цель облегчить рутину при создании собственных панелей управления, но при этом не превратиться в очередную CMS.
 
-Things you may want to cover:
+Доступные локали:
+- Русский
+- English
+### Технологический стек
 
-* Ruby version
+- Ruby 3
+- Ruby On Rails 6.1
+- Tailwind 2 (with TailwindUI)
+- Hotwire
+### Линтеры
+- Rubocop
+- Rubocop Performance
 
-* System dependencies
+Кастомная конфигурация Rubocop лежит в корне проекта `.rubocop.yml`
 
-* Configuration
+### Аутентификация
 
-* Database creation
+В проекте используется Devise. Для администраторов созадана сущность Owner с дополнительными полями:
+- Имя
+- Фамилия
+- Аватар
+- Роль
 
-* Database initialization
+Реализован вход в административную панель по адресу: ...
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Данные для входа:
+- Логин: ...
+- Пароль: ...

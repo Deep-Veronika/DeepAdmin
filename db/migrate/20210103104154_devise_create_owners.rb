@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-class DeviseCreateDeepadmins < ActiveRecord::Migration[6.1]
+class DeviseCreateOwners < ActiveRecord::Migration[6.1]
   def change
-    create_table :deepadmins do |t|
+    create_table :owners do |t|
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
       t.datetime :remember_created_at
@@ -17,7 +17,7 @@ class DeviseCreateDeepadmins < ActiveRecord::Migration[6.1]
       t.timestamps null: false
     end
 
-    add_index :deepadmins, :email,                unique: true
-    add_index :deepadmins, :unlock_token,         unique: true
+    add_index :owners, :email,                unique: true
+    add_index :owners, :unlock_token,         unique: true
   end
 end
